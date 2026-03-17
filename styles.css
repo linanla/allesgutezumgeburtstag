@@ -1,0 +1,47 @@
+body {
+    background-color: #101010;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+td {
+  position: relative;
+}
+
+table {
+    border-spacing: 70px 0;
+    padding-bottom: 300px;
+    border-bottom: 1px solid white;
+    margin-bottom: 100px;
+}
+
+.timeline-splitter {
+  border-right: 5px solid gray;
+  height: auto;
+  position: relative;
+}
+
+.timeline-content {
+  background: #1e1f22;
+  transform: translate(0%, 50%);
+  margin-top: 100px;
+  width: fit-content;
+  padding: 50px;
+  border-radius: 20px;
+}
+
+.circle {
+  border-radius: 100%;
+  width: 20px;
+  height: 20px;
+  background-color: gray;
+  position: absolute;
+  bottom: 0%;
+  right: 0%;
+  transform: translate(64%, 10%);
+}
+
+.table-div {
+    display: flex;
+    justify-content: center;
+}
