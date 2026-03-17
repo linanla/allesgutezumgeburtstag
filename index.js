@@ -37,4 +37,6 @@ function startCountdown(callback) {
 startCountdown((h, m, s) => {
     document.getElementById("timer").textContent =
         `${h} Stunden, ${m} Minuten, ${s} Sekunden`;
+    document.getElementById("spanTimer").textContent =
+        `${h} Stunden, ${m} Minuten, ${s} Sekunden`;
 });
