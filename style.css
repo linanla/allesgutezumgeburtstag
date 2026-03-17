@@ -5,3 +5,8 @@ body {
 .timeline-splitter {
     border-right: 1px;
 }
+
+.timeline-content {
+    min-height: 200px;
+    background: red;
+}
