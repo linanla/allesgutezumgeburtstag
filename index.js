@@ -13,7 +13,7 @@ function startVideo() {
 });
 
 function startCountdown(callback) {
-	const targetDate = new Date("2027-07-29T00:00:00");
+	const targetDate = new Date("2026-07-28T00:00:00");
 
 	setInterval(() => {
 		const now = new Date();
