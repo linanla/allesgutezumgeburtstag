@@ -25,19 +25,20 @@ function startCountdown(callback) {
 		}
 		const totalSeconds = Math.floor(diff / 1000);
 
-		const hours = Math.floor(totalSeconds / 3600);
-		const minutes = Math.floor((totalSeconds % 3600) / 60);
-		const seconds = totalSeconds % 60;
+		const days = Math.floor(totalSeconds / 86400);
+        const hours = Math.floor((totalSeconds % 86400) / 3600);
+        const minutes = Math.floor((totalSeconds % 3600) / 60);
+        const seconds = totalSeconds % 60;
 
-		callback(hours, minutes, seconds);
+		callback(days, hours, minutes, seconds);
 	}, 1000);
 }
 
-startCountdown((h, m, s) => {
+startCountdown((d, h, m, s) => {
 	document.getElementById("timer").textContent =
-		`${h} Stunden, ${m} Minuten, ${s} Sekunden`;
+		`${d} Tage, ${h} Stunden, ${m} Minuten, ${s} Sekunden`;
 	document.getElementById("spanTimer").textContent =
-		`${h} Stunden, ${m} Minuten, ${s} Sekunden`;
+		`${d} Tage, ${h} Stunden, ${m} Minuten, ${s} Sekunden`;
 });
 
 let width = 0;
